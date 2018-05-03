@@ -15,9 +15,9 @@
     "express": "^4.16.3",
 	"web3" : "0.18.4",
 	"web3-provider-engine": "8.6.1",
-	"asyncawait" :"latest",
-	"truffle-contract" : "latest",
-	"ethereumjs-wallet" : : "latest"
+	"asyncawait": "latest",
+	"truffle-contract": "latest",
+	"ethereumjs-wallet": "latest"
   },
     "engines": {
     "node": "8.9.4",
