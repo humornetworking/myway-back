@@ -51,9 +51,6 @@ function loadContract(file, provider, address) {
 
 
 //var newBook = '"La vida es ahora","0x43Db0c23a5BaF89eaFc88B884f56Fd2c89274590","ABC"';
-totalTokenIssued().then(function(totalToken) { 
-   console.log('totalToken=' + totalToken); 
-}).catch(console.error);
 
 
 app.post('/create-book', function(req, res){
@@ -69,6 +66,9 @@ app.post('/create-book', function(req, res){
 		return totalTokenIssued.toString(); 
 	}); 
 	
+	totalTokenIssued().then(function(totalToken) { 
+	   console.log('totalToken=' + totalToken); 
+	}).catch(console.error);
 	
 	res.send(req.body);
 });
