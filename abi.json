@@ -1,0 +1,138 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "title",
+				"type": "string"
+			},
+			{
+				"name": "author",
+				"type": "address"
+			},
+			{
+				"name": "symbolName",
+				"type": "string"
+			}
+		],
+		"name": "addBook",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "text",
+				"type": "string"
+			},
+			{
+				"name": "author",
+				"type": "address"
+			},
+			{
+				"name": "symbolName",
+				"type": "string"
+			},
+			{
+				"name": "origin",
+				"type": "uint256"
+			},
+			{
+				"name": "end",
+				"type": "uint256"
+			}
+		],
+		"name": "addChapter",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "title",
+				"type": "string"
+			}
+		],
+		"name": "bookAdded",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "text",
+				"type": "string"
+			}
+		],
+		"name": "chapterByBook",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "origin",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "end",
+				"type": "uint256"
+			}
+		],
+		"name": "chapterRelation",
+		"type": "event"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "symbolName",
+				"type": "string"
+			}
+		],
+		"name": "getChaptersByBook",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "symbolName",
+				"type": "string"
+			}
+		],
+		"name": "getSymbolIndex",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]
